@@ -58,7 +58,7 @@ public class JavaBasics {
             System.out.println("\t");
         }
 
-        //Penkta užduotis
+        //Penkta užduotiss
 
 
 
