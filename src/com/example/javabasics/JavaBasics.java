@@ -6,6 +6,7 @@ import java.util.Arrays;
 // Pirma užduotis:
 public class JavaBasics {
     public static void main(String[] args) {
+
         /*
             Antra užduotis:
              Edmundas Kaminskas PRIF20/3 20184342
@@ -60,7 +61,34 @@ public class JavaBasics {
 
         //Penkta užduotiss
 
+        double[] eiluciuVidurkiai = new double [n];
+        double[] stulpeliuVidurkiai = new double [m];
 
+        int eiluciuSuma = 0;
+        int stulpeliuSuma = 0;
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                eiluciuSuma += masyvas[i][j];
+            }
+            eiluciuVidurkiai[i] = (double) eiluciuSuma / n;
+            eiluciuSuma = 0;
+        }
+
+        System.out.println("Eiluciu vidurkiai");
+        System.out.println(Arrays.toString(eiluciuVidurkiai));
+
+        for(int j=0; j<m; j++){
+            for(int i=0; i<n; i++){
+                stulpeliuSuma += masyvas[i][j];
+            }
+            stulpeliuVidurkiai[j] = (double) stulpeliuSuma / n;
+            stulpeliuSuma = 0;
+        }
+
+        System.out.println();
+        System.out.println("Stulpeliu Vidurkiai");
+        System.out.println(Arrays.toString(stulpeliuVidurkiai));
 
 
 
