@@ -1,4 +1,7 @@
+
 package com.example.javabasics;
+
+import java.util.Arrays;
 
 // Pirma užduotis:
 public class JavaBasics {
@@ -35,6 +38,31 @@ public class JavaBasics {
 
             }
         }
+
+        for(int i=0; i<m; i++){
+            if (i == 0){
+                System.out.print(" "+"\t");
+            }
+
+            System.out.print( (i) + " "+"\t");
+        }
+
+        System.out.println();
+
+        for(int i=0; i<n; i++){
+            System.out.print((i ) + "|" +"\t" );
+
+            for(int j=0; j<m; j++){
+                System.out.print(masyvas[i][j] + " "+"\t");
+            }
+            System.out.println("\t");
+        }
+
+        //Penkta užduotis
+
+
+
+
 
 
     }
